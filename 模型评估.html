@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>模型评估</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/模型评估/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="js/server.js"></script>
+    <script type="text/javascript" src="js/getTrainRecord.js"></script>
+    <style type="text/css">
+      #u236{
+        height: 25px;
+        top: 237px;
+      }
+      #u236_input{
+        height: 25px;
+      }
+      input[name="model"]{
+            display: none;
+      }
+      .paint{
+        padding-left: 30px;
+        position: relative;
+        top: 3px;
+      }
+      .paint::before{
+        content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          position:absolute;
+          left: 0px;
+          top: -2px;
+          padding:5px;
+      }
+       input[name="model"]:checked+label::before{
+          background: #362e2b;
+          background-clip: content-box;
+      }
+      #u239{
+        left: 502px;
+        width: 300px;
+      }
+      #u238:hover{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u233" class="ax_default box_1">
+        <div id="u233_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u234" class="ax_default box_1">
+        <div id="u234_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u235" class="ax_default _文本段落">
+        <div id="u235_div" class=""></div>
+        <div id="u235_text" class="text ">
+          <p><span>训练名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u236" class="ax_default droplist">
+        <select id="u236_input">
+          <option value="" hidden="true"></option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="u237" class="ax_default text_field">
+        <input id="u237_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u238" class="ax_default button">
+        <div id="u238_div" class=""></div>
+        <div id="u238_text" class="text ">
+          <p><span>开始评估</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u239" class="ax_default radio_button">
+          <input type="radio" name="model" id="loss" checked="true" value="loss">
+          <label class="paint" for="loss">Loss图</label>
+          <input type="radio" name="model" id="accuracy" value="accuracy">
+          <label class="paint" for="accuracy">Accuracy图</label>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u241" class="ax_default _文本段落">
+        <div id="u241_div" class=""></div>
+        <div id="u241_text" class="text ">
+          <p><span>评估名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u242" class="ax_default _文本段落">
+        <div id="u242_div" class=""></div>
+        <div id="u242_text" class="text ">
+          <p><span>训练评估</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u243" class="ax_default _文本段落">
+        <div id="u243_div" class=""></div>
+        <div id="u243_text" class="text ">
+          <p><span>评估图</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

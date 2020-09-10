@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>自定义训练</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/自定义训练/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="js/server.js"></script>
+    <script type="text/javascript" src="js/customTrain.js"></script>
+    <style type="text/css">
+      #u173{
+        top: 282px;
+      }
+      #u166{
+        left: 436px;
+        width: 310px;
+        top: 416px;
+      }
+      input[name="food"]{
+            display: none;
+      }
+       .menu{
+          width: 15px;
+          height: 15px;
+          border: 1px solid #000;
+          border-radius: 3px;
+          display: inline-block;
+          margin-right: 5px;
+          position: relative;
+          left:2px;
+            top: 2px;
+      }
+       input[name="food"]:checked+ .menu:after{
+          content: '';
+          width: 2px;
+          height: 7px;
+          background: purple;
+          display: inline-block;
+          transform: rotate(135deg);
+          position: absolute;
+          left:2px;
+          top: 6px;
+       }
+      input[name="food"]:checked+ .menu:before{
+          content: '';
+          width: 2px;
+          height: 15px;
+          background: purple;
+          display: inline-block;
+          transform: rotate(45deg);
+          position: absolute;
+          left:9.5px;
+          top: 0px;
+     }
+     #u164:hover{
+      cursor: pointer
+     }
+    </style>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u162" class="ax_default box_1">
+        <div id="u162_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u163" class="ax_default box_1">
+        <div id="u163_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u164" class="ax_default button">
+        <div id="u164_div" class=""></div>
+        <div id="u164_text" class="text ">
+          <p><span>下一步</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="u165" class="ax_default text_area">
+        <textarea id="u165_input" name="description" style="margin: 0px; width: 326px; height: 155px;"></textarea>
+      </div>
+
+ 
+      <!-- Unnamed (Rectangle) -->
+      <div id="u167" class="ax_default _文本段落">
+        <div id="u167_div" class=""></div>
+        <div id="u167_text" class="text ">
+          <p><span>训练说明</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u168" class="ax_default _文本段落">
+        <div id="u168_div" class=""></div>
+        <div id="u168_text" class="text ">
+          <p><span>训练集</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u169" class="ax_default _文本段落">
+        <div id="u169_div" class=""></div>
+        <div id="u169_text" class="text ">
+          <p><span>训练名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u170" class="ax_default _文本段落">
+        <div id="u170_div" class=""></div>
+        <div id="u170_text" class="text ">
+          <p><span>模型训练</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u171" class="ax_default _文本段落">
+        <div id="u171_div" class=""></div>
+        <div id="u171_text" class="text ">
+          <p><span>GPU数</span></p>
+        </div>
+      </div>
+
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u173" class="ax_default droplist">
+        <select id="u173_input">
+          <option value="" hidden="true"></option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u174" class="ax_default droplist">
+        <select id="u174_input">
+            <option value="1" selected="">1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+            <option value="4" >4</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u175" class="ax_default droplist">
+        <select id="u175_input">
+          <option value="" hidden="true"></option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u176" class="ax_default _文本段落">
+        <div id="u176_div" class=""></div>
+        <div id="u176_text" class="text ">
+          <p><span>训练网络</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="u177" class="ax_default text_field">
+        <input id="u177_input" type="text" value=""/>
+      </div>
+    </div>
+  </body>
+</html>
